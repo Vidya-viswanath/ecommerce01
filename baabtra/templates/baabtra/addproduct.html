@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+</head>
+<body>
+    <div class="f1">
+    <form action="">
+        <h2 class="h1">PRODUCT DETAILS</h2><br><br>
+        <label for="">Product name:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="product name"><br><br>
+        <label for="">Price:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="price"><br><br>
+        <label for="">Description:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <textarea name="" id="" cols="21" rows="3" class="t1"></textarea><br><br>
+        <label for="">Stock:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="stock"><br><br>
+        <label for="">Seller name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="product name"><br><br>
+        <button class="b2">ADD</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'baabtra:product' %}">BACK</a>
+    </form>
+</div>
+</body>
+</html>

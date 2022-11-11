@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+</head>
+<body>
+    <div class="form1">
+        <!-- <button class="b1"><a href="{% url 'baabtra:productdetails' %}">Add product</a></button> -->
+    <button class="b1"><a href="/baabtra/addproduct">Add product</a></button>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+    <!-- <button class="b1"><a href="{% url 'baabtra:viewproduct' %}">View product</a></button> -->
+    <button class="b1"> <a href="/baabtra/viewproduct">View product</a></button>
+</div>
+</body>
+</html>

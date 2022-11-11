@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="{% static 'css/baabtra.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- <header> -->
+    <div class="container" style="background-color: rgb(30, 51, 62);">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}" alt="" style="height: 75px; width: 150px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Programs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Certification In Python Full Stack Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diploma In Python Full Stack Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Certification In Flutter Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diploma In Flutter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Certification In Angular Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diploma In Angular Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Certification In PHP Full Stack Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diploma In PHP Full Stack Development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">&nbsp;&nbsp; Placements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">&nbsp;&nbsp; About &nbsp; Us</a>
+              </li> 
+              
+              <li class="nav-item">
+                <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">&nbsp;&nbsp;Blog</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">&nbsp;&nbsp;Gallery</a>
+            </li>
+            </ul>
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-outline-success bg-danger text-light" type="submit">Enquiry &nbsp; Now</button>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+             
+            </form>
+          </div>
+        </div>
+      </nav>
+   <hr class="text-light">
+    <!-- </header> -->
+      <section class="banner-left">
+        <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-12 col-lg-6">
+                  <div class="banner-content">
+                      <span class="subheading text-light">Learn software</span>
+                      <h2 class="text-light my-4">Getting a Software Job is So Easy Now with our IT Internship Programs.</h2>
+                      <p class="text-light">Learn programming from kerala's most trusted software training company with the highest placement record. Enroll in software courses and internship programs in Python, Flutter, Angular and PHP to start your career.</p>
+                      <button type="button" class="btn btn-lg btn-danger example-popover w-50" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Our Courses</button>
+                      <script>
+                        var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+                  container: 'body'
+                })
+                      </script>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-img">
+                    <img src="{% static 'images/programming-courses-in-calicut.png' %}" width="550px" height="650px" alt="programming courses in calicut" class="">
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+              
+ <section class="category-section2">
+  <div class="container bg-danger" style="height: 170px; border-radius: 10px; width: 1000px; padding: 50px" >
+    <div class="row align-items-center subscribe-section custom-headre-section">
+      <div class="col-lg-2">
+        <img class="subscribe-section-logo" src="{% static 'images/Oray-Logo.png' %}" width="100px" height="100px" alt="Oray Education London, UK">
+      </div>
+      <div class="col-lg-6">
+        <div class="section-heading white-text">
+          <span class="subheading custom-subheading text-light">We are affiliated with</span>
+          <h3 class="text-light">Oray Education London, UK</h3>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="subscribe-form">
+        <!-- <a class="btn btn-main-2" data-toggle="modal" data-target="#exampleModal">
+        <i class="mr-2 fas fa-chevron-down"></i>Download Brochure</a> -->
+        
+        <button type="button" class="btn btn-lg btn-light example-popover w-80" style="border-radius: 50px;" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Download &nbsp; Brochure</button>
+    
+        <script>
+          
+            // <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+    container: 'body'
+  })
+        </script>
+        
+      </div>
+    </div>
+
+  </div>
+ 
+ </section>             
+</div>           
+</div>
+<section>
+  <div class="container">
+    <h6 class="text-danger" align="center" style="padding: 75px;">EXPERTISE IN EDUCATION</h6>
+    <h3 align="center" style="color: rgb(30, 51, 62);">Ed-tech company with 11 years of industry leadership in training and placements, holding highest number of placement track in Malabar</h3>
+    
+     <div class="parent">
+    <div class="card" style="width: 13rem; border-radius: 10px;" id="box1">
+      <center><img src="{% static 'images/python.png' %}" class="card-img-top w-25" alt="..." style="height: 95px;"></center> 
+      <div class="card-body">
+        <center> <h5 class="card-title" ><b> Python</b></h5></center>
+        <center> <h5 class="card-title"><b> Training</b></h5></center>
+          
+      </div>
+    </div>
+    <div class="card" style="width: 13rem; border-radius: 10px;" id="box2">
+      <center><img src="{% static 'images/flutter.png' %}" class="card-img-top w-25" alt="..." style="height: 95px; padding: 1px;"></center> 
+      <div class="card-body">
+        <center> <h5 class="card-title" ><b> Flutter</b></h5></center>
+        <center> <h5 class="card-title"><b> Training</b></h5></center>
+  </div> 
+  </div>
+  <div class="card" style="width: 13rem; border-radius: 10px;" id="box2">
+    <center><img src="{% static 'images/angular.png' %}" class="card-img-top w-25" alt="..." style="height: 95px;"></center> 
+    <div class="card-body">
+      <center> <h5 class="card-title" ><b>Angular</b></h5></center>
+      <center> <h5 class="card-title"><b> Training</b></h5></center>
+</div> 
+</div>
+<div class="card" style="width: 13rem; border-radius: 10px;" id="box2">
+  <center><img src="{% static 'images/php.png' %}" class="card-img-top w-25" alt="..." style="height: 95px;"></center> 
+  <div class="card-body">
+    <center> <h5 class="card-title" ><b>PHP</b></h5></center>
+    <center> <h5 class="card-title"><b> Training</b></h5></center>
+</div> 
+</div>
+</section>
+  <section class="about-section section-padding about-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="about-img2">
+  <img src="{% static 'images/explore.png' %}" alt="Explore Our internship programme" class="img-fluid" style="padding: 28px;">
+
+</div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="section-heading">
+            <span class="subheading">Explore Our internship programme</span>
+            <h3>Learn new skills to go ahead of your career</h3>
+
+            </div>
+            <ul class="pb-4">
+              <li>
+              <b><span class="about-list-heading text-danger" style="padding: 5px;">Join&nbsp;Us</span></b>
+              <p style="padding: 5px;">It doesn't matter how talented you are. Join specialized job oriented software courses & training programs and just learn the in-demand skills to be a better programmer.</p>
+              </li>
+              <li>
+                <b><span class="about-list-heading text-danger" style="padding: 5px;">Get&nbsp;Skilled&nbsp;for&nbsp;Job</span></b>
+                <p style="padding: 5px;">Get trained and skilled under the guidence of expert software engineers and be ready for the jobs.</p>
+                </li>
+                <li>
+                  <b><span class="about-list-heading text-danger" style="padding: 5px;">Get&nbsp;Hired</span></b>
+                  <p style="padding: 5px;">Showcase your profile with skills acquired and get hired by your dream company.</p>
+                  </li>
+
+            </ul>
+          </div>
+<!-- <section class="about-section section-padding about-2">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <div class="about-img2"> 
+
+
+
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        
+
+      
+      <!-- <div id="box1"></div>
+      <div id="box2">box2</div>
+      <div id="box3">box3</div>
+      <div id="box4">box4</div>
+    </div> -->
+  
+</body>
+</html>

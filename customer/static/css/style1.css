@@ -1,0 +1,21 @@
+img[alt=img2]{
+    width: 500px;
+    height: 600px;
+}
+a[href="youtube.com"]{
+    color: brown;
+    font-size: medium;
+}
+
+a[href="facebook.com"]{
+    color: darkgoldenrod;
+    font-size: medium;
+
+}
+span{
+    color: red;
+    font-size: large;
+}
+div span{
+    color: inherit;
+}

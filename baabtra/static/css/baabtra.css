@@ -1,0 +1,23 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+}
+#box1{
+/* border: 0px; */
+/* padding: 2px; */
+}
+#box2{
+    /* border: 0px; */
+    /* padding: 2px; */
+    }
+    
+#box3{
+        /* border: 0px; */
+        /* padding: 2px; */
+        }
+#box4{
+            /* border: 0px; */
+            /* padding: 2px; */
+            }

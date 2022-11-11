@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="{% static 'css/jquery.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="crossorigin="anonymous">
+    </script>
+     <!-- <style>
+        div
+        {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            /* display: none; */
+        }
+    </style> -->
+    
+</head>
+<body>
+    <!-- <ul>
+        <li>l1</li>
+        <li>l2</li>
+        <li>l3</li>
+        <li>l4</li>
+    </ul> -->
+    <p>Hello</p> 
+    <p>hai</p>
+    
+    <span id="s2"></span>
+    <div>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <span id="s1"></span>
+        <span id="span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deleniti.</span>
+    </div>
+    <p>p6</p>
+    <p>p7</p>
+    <!-- <p id="p1">helooo</p>
+    <input type="text" size="10px" value="anu">
+
+    <script> -->
+        <!-- // $(document).ready(function(){
+        //     var a = $("#p1").html()
+        //     $("#p1").html("haaaiiii")
+        //     console.log(a)
+        //     var x = $("input").val()
+        //     console.log(x) -->
+
+            
+        <!-- // }) -->
+    <!-- </script> -->
+    <button id="b1">ADD</button>
+        <div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla neque facilis, sed et eos, ducimus inventore delectus sequi, doloremque atque aspernatur. Eligendi distinctio nihil magni repellendus ipsum asperiores ipsam nobis.
+        </div>
+        <script>
+            $(document).ready(function(){
+                // $("#b1").click(function(){
+                //     $("b1").hide(3000)
+                    // $("#div").toggle(3000)
+                    // $("div").fadeOut(3000)
+                    // $("div").fadeIn(3000)
+                    // $("div").fadeTo(3000)
+                    // $("div").fadeTo(1000,0.5)
+                    // $("div").slideDown(3000)
+
+                // })
+                $("div").click(function(){
+
+                    // console.log($('#span').parent())
+                    // console.log($('#span').children())
+                    // console.log($('#span').siblings())
+                    // console.log($('span').first())
+                    // console.log($('span').last())
+                    // console.log($('span').eq(0))
+                    // $(this).animate({
+                        // 'height':"500px",
+                        // // 'width':"500px"
+                        // 'left':'200px'
+                        // 'top':'100px'
+                    // },3000).delay(3000)
+                    // .animate({
+                    //     'top':'100px'
+
+                    // },3000).delay(3000)
+                    // .animate({
+                    //     'left':'0px'
+                    // },3000).delay(3000)
+                    // .animate({
+                    //     'top':'0px'
+                    // },3000)
+                    // $(this).css({
+                    //     'color':'red',
+                    //     'font-size':'25px'
+                    // })
+                    // $(this).addClass("div1")
+                    // $(this).remove()
+                    // $("ul").empty()
+                    // console.log($(this).height())
+                    // console.log($(this).width())
+                    // console.log($(this).innerHeight())
+                    // console.log($(this).innerWidth())
+                    // console.log($(this).outerHeight())
+                    // console.log($(this).outerWidth())
+                    $('p').eq(0).css('color','green')
+                    $('p').eq(1).css('color','red')
+                    $('div').children().eq(0).css('color','blue')
+                    $('div').children().eq(2).css('color','indigo')
+
+
+                    // $('p').eq(2).css('color','blue')
+                    // $('p').eq(4).css('color','indigo')
+
+                })
+
+            })
+            
+        </script>
+</body>
+</html>

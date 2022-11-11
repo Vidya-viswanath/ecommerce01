@@ -1,0 +1,101 @@
+.parent{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    flex-basis: auto;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+}
+#f1{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/download.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#f2{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/image1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#f3{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/image2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+#f4{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/image3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#f5{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/image4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#f6{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/image5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#f7{
+    background-color: #f1f1f1;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: url('../images/download\ \(1\).jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

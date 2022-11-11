@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div class="parent"> -->
+        <div class="mb-3">
+            <p><b>TO DO</b></p> 
+            <label for="exampleFormControlInput1" class="form-label">Task</label><br>
+            <input type="text" id="task">
+          </div> <br />
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label><br>
+            <textarea id="desc"></textarea>
+          </div>
+          <div>
+            <button type="button" onclick="addTask()" >Add</button>
+          </div>
+          <br />
+    <!-- </div> -->
+    <table class="table table-bordered" id="todo_tb">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Task</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <script>
+        var s_no = 0
+        var tr_no = 0
+        function addTask()
+        {
+           var tb = document.getElementById("todo_tb")
+           var new_tr = document.createElement("tr")//create a new row
+           var task = document.getElementById("task")
+           var desc = document.getElementById("desc")
+           var status = "pending"
+           var date = new Date()
+           var current_date = date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()
+           console.log(current_date)
+           tr_no ++
+           var tr_id = "tr" + tr_no
+           new_tr.setAttribute("id",tr_id) 
+           //creating td inside newly created tr
+           var td_sn = new_tr.appendChild(document.createElement("td"))
+           var td_task = new_tr.appendChild(document.createElement("td"))
+           var td_desc = new_tr.appendChild(document.createElement("td"))
+           var td_date = new_tr.appendChild(document.createElement("td"))
+           var td_status = new_tr.appendChild(document.createElement("td"))
+           var td_action = new_tr.appendChild(document.createElement("td"))
+           s_no ++
+           td_sn.innerHTML = s_no 
+           td_task.innerHTML = task.value
+           td_desc.innerHTML = desc.value
+           td_date.innerHTML = current_date
+           td_status.innerHTML = "<span style='color:red'>pending</span>"
+           td_action.innerHTML = "<button onclick=taskCompleted() type='button' class='btn btn-primary'>Completed</button>"
+
+           tb.appendChild(new_tr)//appending newly created tr inside table
+           task.value = ""
+           desc.value = ""
+           
+
+        }
+        function taskCompleted()
+        {
+          var selected_row_id = event.target.parentNode.parentNode.id//to get the tr id
+          var selected_row = document.getElementById(selected_row_id)
+          var children = selected_row.childNodes
+          console.log(children)
+          console.log(selected_row_id)
+          children[4].innerHTML = "<span style='color:green'>Completed</span>"
+          selected_row.style.textDecoration = "line-through"
+        }
+      </script>
+
+</body>
+</html>

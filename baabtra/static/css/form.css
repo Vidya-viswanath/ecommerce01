@@ -1,0 +1,48 @@
+.form1  
+{  
+width: 200px;  
+height: 100px;  
+margin: auto;
+margin-left: 50px;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 20px;  
+}
+
+.b1
+{
+    margin-left: 50px;
+}
+.f1
+{
+background-color: rgb(197, 208, 230);
+width: 300px;  
+height: 450px;  
+margin: auto;
+margin-left: 300px;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 20px;  
+}
+.b2
+{
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.b2:hover
+{
+    background-color: green;
+    color: black;
+}
+.t1
+{
+    margin-left: 110px;
+}
+.h1
+{
+    margin-left: 30px;
+}

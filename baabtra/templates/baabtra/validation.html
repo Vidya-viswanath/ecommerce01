@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input id="f1" type="text" placeholder="username"><br />
+        <b id="label1"></b><br /><br />
+        <input id="f2" type="text" placeholder="E-mail"><br /><br />
+        <b id="label2"></b><br>
+        <input id="f3" type="password" placeholder="password"><br /><br />
+        <b id="label3"></b><br>
+        <input id="f4" type="password" placeholder="confirm password"><br><br>
+        <b id="label4"></b><br><br>
+        <button onclick="return formvalidation()" type="submit">SUBMIT</button>
+    </form>
+        <script>
+            function formvalidation(){
+                u_name = document.getElementById("f1").value
+                e_mail = document.getElementById("f2").value
+                password = document.getElementById("f3").value
+                c_password = document.getElementById("f4").value
+                validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                status = 0
+
+                if(u_name == ""){
+                    document.getElementById("label1").innerHTML = 'Username can be NULL'
+                    document.getElementById("label1").style.color = 'red'
+                    status = 1
+
+                }
+                else{
+                    document.getElementById("label2").innerHTML=""
+                    // document.getElementById("f2").focus()
+                    // document.getElementById("f2").setAttribute('class',"error")
+                }
+                if(e_mail.match(validRegex)){
+                    document.getElementById("label2").innerHTML = ""
+                }
+                else{
+                    
+                    document.getElementById("label2").innerHTML = "wrong E-mail format"
+                    document.getElementById("label2").style.color = "red"
+                    document.getElementById("f2").focus()
+                    document.getElementById("f2").setAttribute('class',"error")
+                    status = 1
+                }
+                if(password.length < 6){
+                    document.getElementById("label3").innerHTML = "Password too short"
+                    document.getElementById("label3").style.color = "red"
+                    status = 1
+                }
+                else{
+                    document.getElementById("label3").innerHTML = ""
+                }
+                if(c_password != password){
+                    document.getElementById("label4").innerHTML = "Password must be same"
+                    document.getElementById("label4").style.color = "red"
+                    status = 1
+                }
+                else{
+                    document.getElementById("label4").innerHTML = ""
+                }
+                if(status==1){
+                    return false
+                }
+
+
+            }
+        </script>
+     
+</body>
+</html>

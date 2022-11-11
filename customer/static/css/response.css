@@ -1,0 +1,24 @@
+#box1{
+    width: 50%;
+    border: 1px black solid;
+    margin: 25px;
+    height: 100px;
+    background-color: blueviolet;
+    padding: 20px;
+}
+#box2{
+    width: 50%;
+    border: 1px black solid;
+    margin: 25px;
+    height: 100px;
+    background-color: blueviolet;
+    padding: 20px;
+} 
+#box3{
+    width: 50%;
+    border: 1px black solid;
+    margin: 25px;
+    height: 100px;
+    background-color: blueviolet;
+    padding: 20px;
+}
